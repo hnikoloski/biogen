@@ -1,0 +1,19 @@
+footer{
+    // position: absolute;
+    // bottom: 5%;
+    margin-top: 5%;
+    margin-bottom: 1%;
+    width: 100%;
+    ul{
+        margin: 0 auto;
+        padding: 0;
+        list-style: none;
+        li{
+            display: inline;
+            margin-right: 85px;
+            &:last-of-type{
+                margin-right: 0;
+            }
+        }
+    }
+}

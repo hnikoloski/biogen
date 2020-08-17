@@ -1,0 +1,498 @@
+.topBar {
+  text-align: center;
+  margin-top: 30px;
+}
+.topBar img {
+  height: 85px;
+}
+.topBar img.logo {
+  margin: 0 auto;
+}
+.topBar a {
+  color: #ffffff;
+  font-size: 2rem;
+  line-height: 10.7rem;
+  vertical-align: baseline;
+}
+.topBar a.logOut {
+  position: relative;
+  padding-right: 15px;
+}
+.topBar a.logOut::after {
+  content: "";
+  opacity: 0.5;
+  position: absolute;
+  left: 100%;
+  bottom: 0;
+  background: url(../../assets/img/logOut.svg) no-repeat;
+  height: 30px;
+  width: 30px;
+}
+.topBar a:hover {
+  opacity: 0.8;
+  text-decoration: none;
+}
+
+body .content h1 {
+  font-size: 12.9rem;
+}
+body .content .greenFont {
+  color: #b3ef81;
+}
+body .content p {
+  font-size: 2.2rem;
+}
+body .content .form-wrapper {
+  width: 555px;
+  height: 250px;
+  background-color: #b3ef81;
+  margin: 0 auto;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.16);
+  border-radius: 30px;
+  position: relative;
+  padding: 50px 30px 20px 30px;
+}
+body .content .form-wrapper form {
+  width: 100%;
+}
+body .content .form-wrapper form input {
+  color: #333;
+  width: 100%;
+  margin-bottom: 30px;
+  border: none;
+  border-radius: 40px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.16);
+  height: 70px;
+  padding: 20px 30px;
+  font-size: 2.5rem;
+}
+body .content .form-wrapper form input::placeholder {
+  color: #6c6c6c;
+}
+body .content .form-wrapper form button {
+  position: absolute;
+  bottom: -17%;
+  right: 10%;
+  background-color: #fac040;
+  border: none;
+  border-radius: 28px;
+  padding: 15px 30px;
+}
+body .content .form-wrapper form button:hover {
+  background-color: #dca428;
+}
+
+@media (max-width: 768px) {
+  body .content .form-wrapper {
+    width: 80%;
+    margin-bottom: 25px;
+  }
+
+  .toggleable h1 {
+    font-size: 4rem !important;
+  }
+}
+body .content h1 {
+  font-size: 12.9rem;
+}
+body .content .greenFont {
+  color: #b3ef81;
+}
+body .content p {
+  font-size: 2.2rem;
+  margin: 0 auto;
+  max-width: 55ch;
+}
+body .content p.paraTitle {
+  margin-bottom: 35px;
+  max-width: 40ch;
+}
+body .content .content-container {
+  width: 90%;
+  background-color: #FFFFFF;
+  color: #6C6C6C;
+  margin: 0 auto;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.16);
+  border-radius: 30px;
+  position: relative;
+  padding: 55px 0;
+}
+body .content .content-container h5 {
+  color: #B3EF81;
+  font-size: 4rem;
+  padding-top: 50px;
+}
+body .content .content-container .btnNext {
+  position: absolute;
+  bottom: -10%;
+  right: 10%;
+  background-color: #fac040;
+  border: none;
+  border-radius: 28px;
+  padding: 15px 30px;
+}
+body .content .content-container .btnNext:hover {
+  background-color: #dca428;
+}
+
+.content.thirdScreen .leftBoxBackground {
+  height: 600px;
+  position: relative;
+  z-index: 1;
+  width: 92%;
+}
+.content.thirdScreen .leftBox {
+  backdrop-filter: blur(10px);
+  position: absolute;
+  z-index: 999;
+  height: 600px;
+  width: 92%;
+  top: 0;
+  left: 0;
+  padding: 65px 40px 40px 40px;
+  border-radius: 40px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.16);
+}
+.content.thirdScreen .leftBox p {
+  font-size: 2rem;
+  width: 44ch;
+  font-style: italic;
+  margin-bottom: 55px;
+  padding: 0 40px;
+}
+.content.thirdScreen .leftBox p span {
+  text-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+.content.thirdScreen .leftBox textarea {
+  padding: 5%;
+  height: 300px;
+  width: 90%;
+  margin: 0 auto;
+  bottom: 15%;
+  left: 26px;
+  border-radius: 40px;
+  border: dashed 1px #5F5F5F;
+  font-size: 2.6rem;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.16);
+}
+.content.thirdScreen .leftBox label {
+  position: absolute;
+  color: #5F5F5F;
+  top: 75%;
+  left: 70%;
+  z-index: 8;
+  font-size: 1.8rem;
+}
+.content.thirdScreen .leftBox label.maxChars {
+  color: red;
+}
+.content.thirdScreen .rightBoxBackground {
+  height: 600px;
+  position: relative;
+  z-index: 1;
+  width: 92%;
+}
+.content.thirdScreen .rightBox {
+  backdrop-filter: blur(10px);
+  position: absolute;
+  z-index: 999;
+  height: 600px;
+  width: 92%;
+  top: 0;
+  left: 0;
+  padding: 65px 40px 40px 40px;
+  border-radius: 40px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.16);
+}
+.content.thirdScreen .rightBox p {
+  font-size: 2rem;
+  width: 44ch;
+  font-style: italic;
+  margin-bottom: 55px;
+  padding: 0 115px;
+}
+.content.thirdScreen .rightBox p span {
+  text-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+.content.thirdScreen .rightBox input {
+  opacity: 0;
+  line-height: 300px;
+  z-index: 10;
+  position: relative;
+  left: 2%;
+  width: 92%;
+}
+.content.thirdScreen .rightBox .uploadZone {
+  position: absolute;
+  bottom: 15%;
+  left: 12%;
+  background-color: #fff;
+  color: #6C6C6C;
+  height: 300px;
+  padding: 90px 50px;
+  border-radius: 40px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.16);
+  border: 1px dashed #707070;
+}
+.content.thirdScreen .rightBox .uploadZone p {
+  width: 100%;
+  padding: 0;
+  font-style: normal;
+  margin-bottom: 0 !important;
+}
+.content.thirdScreen .rightBox .uploadZone img {
+  height: 35px;
+  margin-top: 23px;
+  margin-bottom: 20px;
+}
+.content.thirdScreen .rightBox .uploadZone .uploadBtn {
+  background: #fff;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.16);
+  width: 200px;
+  margin: 0 auto;
+  padding: 13px 30px;
+  font-size: 1.7rem;
+  border-radius: 36px;
+}
+.content.thirdScreen .rightBox .btnNext {
+  position: absolute;
+  bottom: -5%;
+  right: 10%;
+  background-color: #fac040;
+  border: none;
+  border-radius: 28px;
+  padding: 15px 30px;
+}
+.content.thirdScreen .rightBox .btnNext:hover {
+  background-color: #dca428;
+}
+
+.content.fourthScreen .leftBoxBackground {
+  height: 600px;
+  position: relative;
+  z-index: 1;
+  width: 92%;
+}
+.content.fourthScreen .leftBox {
+  backdrop-filter: blur(10px);
+  position: absolute;
+  z-index: 999;
+  height: 600px;
+  width: 92%;
+  top: 0;
+  left: 0;
+  padding: 65px 40px 40px 40px;
+  border-radius: 40px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.16);
+}
+.content.fourthScreen .leftBox p {
+  font-size: 2rem;
+  width: 45ch;
+  font-style: italic;
+  margin-bottom: 55px;
+  padding: 0 40px;
+}
+.content.fourthScreen .leftBox p span {
+  text-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+.content.fourthScreen .leftBox textarea {
+  padding: 5%;
+  height: 300px;
+  width: 90%;
+  margin: 0 auto;
+  bottom: 15%;
+  left: 26px;
+  border-radius: 40px;
+  border: dashed 1px #5F5F5F;
+  font-size: 2.6rem;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.16);
+}
+.content.fourthScreen .leftBox label {
+  position: absolute;
+  color: #5F5F5F;
+  top: 73%;
+  left: 82%;
+  z-index: 8;
+  font-size: 1.8rem;
+}
+.content.fourthScreen .leftBox label.maxChars {
+  color: red;
+}
+.content.fourthScreen .rightBoxBackground {
+  height: 600px;
+  position: relative;
+  z-index: 1;
+  width: 92%;
+}
+.content.fourthScreen .rightBox {
+  backdrop-filter: blur(10px);
+  position: absolute;
+  z-index: 999;
+  height: 600px;
+  width: 92%;
+  top: 0;
+  left: 0;
+  padding: 65px 40px 40px 40px;
+  border-radius: 40px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.16);
+}
+.content.fourthScreen .rightBox p {
+  font-size: 2rem;
+  width: 46ch;
+  font-style: italic;
+  margin-bottom: 55px;
+  padding: 0 115px;
+}
+.content.fourthScreen .rightBox p span {
+  text-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+.content.fourthScreen .rightBox input {
+  opacity: 0;
+  line-height: 300px;
+  z-index: 10;
+  position: relative;
+  left: 2%;
+  width: 92%;
+}
+.content.fourthScreen .rightBox .uploadZone {
+  position: absolute;
+  bottom: 15%;
+  left: 12%;
+  background-color: #fff;
+  color: #6C6C6C;
+  height: 300px;
+  padding: 90px 50px;
+  border-radius: 40px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.16);
+  border: 1px dashed #707070;
+}
+.content.fourthScreen .rightBox .uploadZone p {
+  width: 100%;
+  padding: 0;
+  font-style: normal;
+  margin-bottom: 0 !important;
+}
+.content.fourthScreen .rightBox .uploadZone img {
+  height: 35px;
+  margin-top: 23px;
+  margin-bottom: 20px;
+}
+.content.fourthScreen .rightBox .uploadZone .uploadBtn {
+  background: #fff;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.16);
+  width: 200px;
+  margin: 0 auto;
+  padding: 13px 30px;
+  font-size: 1.7rem;
+  border-radius: 36px;
+}
+.content.fourthScreen .rightBox .btnNext {
+  position: absolute;
+  bottom: -5%;
+  right: 10%;
+  background-color: #fac040;
+  border: none;
+  border-radius: 28px;
+  padding: 15px 30px;
+}
+.content.fourthScreen .rightBox .btnNext:hover {
+  background-color: #dca428;
+}
+
+.content.fifthScreen h1 {
+  font-size: 10rem;
+  text-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+.content.fifthScreen .btn-yellow {
+  background-color: #FAC040;
+  color: #fff;
+  border-radius: 40px;
+  font-size: 2.4rem;
+  padding: 15px 30px;
+  line-height: 12rem;
+}
+.content.fifthScreen .btn-yellow:hover {
+  text-decoration: none;
+}
+
+body.sixth .content.sixthScreen .wrapper {
+  position: relative;
+  top: 50%;
+  background-color: #fff;
+  border-radius: 40px;
+  color: #6c6c6c;
+  width: 475px;
+  margin: 0 auto;
+  padding: 30px 40px;
+}
+body.sixth .content.sixthScreen .wrapper h5 {
+  font-size: 4rem;
+  font-weight: 500;
+}
+body.sixth .content.sixthScreen .wrapper p {
+  font-size: 2.8rem;
+  font-weight: 300;
+  line-height: 40px;
+}
+body.sixth .content.sixthScreen .wrapper .btnNext {
+  position: absolute;
+  bottom: -17%;
+  right: 10%;
+  background-color: #fac040;
+  border: none;
+  border-radius: 28px;
+  padding: 15px 30px;
+}
+body.sixth .content.sixthScreen .wrapper .btnNext:hover {
+  background-color: #dca428;
+}
+body.sixth footer {
+  position: absolute;
+  bottom: 5%;
+}
+
+footer {
+  margin-top: 5%;
+  margin-bottom: 1%;
+  width: 100%;
+}
+footer ul {
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+}
+footer ul li {
+  display: inline;
+  margin-right: 85px;
+}
+footer ul li:last-of-type {
+  margin-right: 0;
+}
+
+html {
+  min-height: 100vh;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  font-size: 10px;
+  color: #fff;
+}
+
+body {
+  background: url(../../assets/img/background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+input:focus {
+  outline: none;
+}
+
+span.bold {
+  font-weight: bold;
+}
+
+/*# sourceMappingURL=main.css.map */

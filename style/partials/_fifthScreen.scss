@@ -1,0 +1,21 @@
+
+  .content {
+   &.fifthScreen{
+     h1{
+       font-size: 10rem;
+       text-shadow: 0 10px 20px rgba(0,0,0,0.3);
+     }
+     .btn-yellow{
+       background-color: #FAC040;
+       color: #fff;
+       border-radius: 40px;
+       font-size: 2.4rem;
+       padding: 15px 30px;
+       line-height: 12rem;
+       &:hover{
+         text-decoration: none;
+       }
+     }
+   }
+  }
+

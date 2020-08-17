@@ -1,0 +1,68 @@
+body {
+  .content {
+    h1 {
+      font-size: 12.9rem;
+    }
+    .greenFont {
+      color: #b3ef81;
+    }
+    p{
+        font-size: 2.2rem;
+    }
+    .form-wrapper {
+      width: 555px;
+      height: 250px;
+      background-color: #b3ef81;
+      margin: 0 auto;
+      box-shadow: 0 10px 20px rgba($color: #000000, $alpha: 0.16);
+      border-radius: 30px;
+      position: relative;
+      padding: 50px 30px 20px 30px;
+      form {
+        width: 100%;
+        input {
+          color: #333;
+          width: 100%;
+          margin-bottom: 30px;
+          border: none;
+          border-radius: 40px;
+          box-shadow: 0 10px 20px rgba($color: #000000, $alpha: 0.16);
+          height: 70px;
+          padding: 20px 30px;
+          font-size: 2.5rem;
+
+          &::placeholder {
+            color: #6c6c6c;
+          }
+        }
+        button {
+          position: absolute;
+          bottom: -17%;
+          right: 10%;
+          background-color: #fac040;
+          border: none;
+          border-radius: 28px;
+          padding: 15px 30px;
+          &:hover {
+            background-color: #dca428;
+          }
+        }
+      }
+    }
+  }
+}
+@media(max-width:768px){
+  body {
+    .content{
+      .form-wrapper{
+        width: 80%;
+        margin-bottom: 25px;
+      }
+      
+    } 
+    
+  }
+.toggleable h1{
+  font-size: 4rem!important;
+}
+}

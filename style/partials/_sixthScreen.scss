@@ -1,0 +1,43 @@
+body {
+  &.sixth {
+    .content {
+      &.sixthScreen {
+        .wrapper {
+          position: relative;
+          top: 50%;
+          background-color: #fff;
+          border-radius: 40px;
+          color: #6c6c6c;
+          width: 475px;
+          margin: 0 auto;
+          padding: 30px 40px;
+          h5 {
+            font-size: 4rem;
+            font-weight: 500;
+          }
+          p {
+            font-size: 2.8rem;
+            font-weight: 300;
+            line-height: 40px;
+          }
+          .btnNext {
+            position: absolute;
+            bottom: -17%;
+            right: 10%;
+            background-color: #fac040;
+            border: none;
+            border-radius: 28px;
+            padding: 15px 30px;
+            &:hover {
+              background-color: #dca428;
+            }
+          }
+        }
+      }
+    }
+    footer {
+      position: absolute;
+      bottom: 5%;
+    }
+  }
+}

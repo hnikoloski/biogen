@@ -1,0 +1,139 @@
+
+  .content {
+   &.fourthScreen{
+     .leftBoxBackground{
+       height: 600px;
+       position: relative;
+       z-index: 1;
+       //  background-color: green;
+       width: 92%;
+      }
+      .leftBox{
+        backdrop-filter: blur(10px);
+        position: absolute;
+        z-index: 999;
+        height: 600px;
+        width: 92%;
+        top: 0;
+        left: 0;
+        padding: 65px 40px 40px 40px;
+        border-radius: 40px;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.16);
+        p{
+          font-size: 2rem;
+          width: 45ch;
+          font-style: italic;
+          margin-bottom: 55px;
+          padding: 0 40px;
+          span{
+            text-shadow: 0 10px 20px rgba(0,0,0,0.3);
+          }
+        }
+        textarea{
+          padding: 5%;
+          height: 300px;
+          width: 90%;
+          margin: 0 auto;
+          bottom: 15%;
+          left: 26px;
+          border-radius: 40px;
+          border: dashed 1px #5F5F5F;
+          font-size: 2.6rem;
+          box-shadow: 0 10px 20px rgba(0,0,0,0.16);
+        }
+        label{
+          position: absolute;
+          color: #5F5F5F;
+          top: 73%;
+          left: 82%;
+          z-index: 8;
+          font-size: 1.8rem;
+          &.maxChars{
+            color: red;
+          }
+        }
+    }
+    .rightBoxBackground{
+      height: 600px;
+      position: relative;
+      z-index: 1;
+      //  background-color: green;
+      width: 92%;
+     }
+     .rightBox{
+       backdrop-filter: blur(10px);
+       position: absolute;
+       z-index: 999;
+       height: 600px;
+       width: 92%;
+       top: 0;
+       left: 0;
+       padding: 65px 40px 40px 40px;
+       border-radius: 40px;
+       box-shadow: 0 10px 20px rgba(0,0,0,0.16);
+       p{
+         font-size: 2rem;
+         width: 46ch;
+         font-style: italic;
+         margin-bottom: 55px;
+         padding: 0  115px;
+         span{
+           text-shadow: 0 10px 20px rgba(0,0,0,0.3);
+         }
+       }
+      input{
+        opacity: 0;
+        line-height: 300px;
+        z-index: 10;
+        position: relative;
+        left: 2%;
+        width: 92%;
+      }
+      .uploadZone{
+        position: absolute;
+        bottom: 15%;
+        left: 12%;
+        background-color: #fff;
+        color: #6C6C6C;
+        height: 300px;
+        padding: 90px 50px;
+        border-radius: 40px;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.16);
+        border: 1px dashed #707070;
+        p{
+          width: 100%;
+          padding: 0;
+          font-style: normal;
+          margin-bottom: 0!important;
+        }
+        img{
+          height: 35px;
+          margin-top: 23px;
+          margin-bottom: 20px;
+        }
+        .uploadBtn{
+          background: #fff;
+          box-shadow: 0 10px 20px rgba(0,0,0,0.16);
+          width: 200px;
+          margin: 0 auto;
+          padding: 13px 30px;
+          font-size: 1.7rem;
+          border-radius: 36px;
+        }
+      }
+      .btnNext {
+        position: absolute;
+        bottom: -5%;
+        right: 10%;
+        background-color: #fac040;
+        border: none;
+        border-radius: 28px;
+        padding: 15px 30px;
+        &:hover {
+          background-color: #dca428;
+        }
+      }
+   }
+   }
+  }
+
