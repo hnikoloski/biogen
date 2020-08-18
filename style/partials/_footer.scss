@@ -1,6 +1,4 @@
 footer{
-    // position: absolute;
-    // bottom: 5%;
     margin-top: 5%;
     margin-bottom: 1%;
     width: 100%;
@@ -8,11 +6,49 @@ footer{
         margin: 0 auto;
         padding: 0;
         list-style: none;
+        display: flex;
+        justify-content: space-between;
         li{
-            display: inline;
+            display: flex;
             margin-right: 85px;
+            align-items: flex-end;
             &:last-of-type{
                 margin-right: 0;
+            }
+            img{
+                object-fit: contain;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    footer{
+        ul{
+            margin: 0 auto;
+            padding: 0;
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+            li{
+                width: 25%;
+            
+                img{
+                    object-fit: contain;
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    footer{
+        padding: 0 5%;
+        ul{
+            li{
+                margin-right: 0;
+                
             }
         }
     }

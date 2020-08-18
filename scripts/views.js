@@ -1,18 +1,39 @@
 let secondHeader = `   <div class="topBar">
+<div class="mobileHide">
 <div class="container">
     <div class="row">
-        <div class="col-md-4">
+        <div class="col-sm-12 col-md-4">
             <a href="#!">InformArtistica</a>
         </div>
-        <div class="col-md-4">
+        <div class="col-sm-12 col-md-4">
           <img src="./assets/img/logo.svg" alt="logo" class="logo">
       </div>
-      <div class="col-md-4">
+      <div class="col-sm-12 col-md-4">
         <a href="#!" class="logOut">Alessandra</a>
     </div>
     </div>
 </div>
 </div>
+<div class='mobileShow'>
+<div class="container">
+    <div class="row">
+    <ul>    
+    <li class="logoWrapper">
+        <img src="./assets/img/logo.svg" alt="logo" class="logo">
+        </li>
+        <li class="logOutWrapper">
+        <a href="#!">
+        <img src="./assets/img/person.png" alt="LogOut" class="logOutMobile">
+        
+        </a>
+        </li>
+        </ul>
+       
+    </div>
+</div>
+</div>
+</div>
+
 `;
 
 let secondMain= ` <div class="content toggleable">
@@ -38,8 +59,9 @@ let secondMain= ` <div class="content toggleable">
 <script>
 $(document).ready(function(){
   $('.openThird').on('click' ,function(){
-    console.log(123)
-    $('.toggleable').replaceWith(thirdMain);
+    $('.toggleable').animate({'opacity': 0}, 400, function(){
+      $(this).html(thirdMain).animate({'opacity': 1}, 400); 
+    });
   });
 })</script>`;
 
@@ -79,6 +101,56 @@ let thirdMain = `  <div class="content toggleable thirdScreen">
           <button class="btnNext"><img src="./assets/img/arrow-right.svg" alt="next"></button>
       </div>
     </div>
+  </div>
+</div>
+</div>
+<script>
+$(document).ready(function(){
+  $('.btnNext').on('click' ,function(){
+    console.log(123)
+    $('.toggleable').animate({'opacity': 0}, 400, function(){
+      $(this).html(fourthMain).animate({'opacity': 1}, 400); 
+    });
+  });
+})</script>`;
+
+let fourthMain = `<div class="content toggleable fifthScreen">
+<div class="container">
+  <div class="row">
+    <div class="col-md-12 text-center">
+      <h1>Ci vediamo 
+        il 15 Settembre</h1>
+        <a href="#!" class="btn-yellow" id="btnNext">Una sorpresa arriverà molto presto</a>
+    </div>
+    
+  </div>
+</div>
+</div>
+<script>
+$(document).ready(function(){
+  $('#btnNext').on('click' ,function(){
+    console.log(123)
+    $('.toggleable').animate({'opacity': 0}, 400, function(){
+      $(this).html(fifthMain).animate({'opacity': 1}, 400); 
+    });
+    $('body').addClass('sixth');
+  });
+})</script>`;
+
+let fifthMain= `<div class="content toggleable sixthScreen">
+<div class="container">
+  <div class="row">
+    <div class="col text-center">
+      <div class="wrapper">
+      <h5>Troppo presto! </h5>
+      <p>Cliccami dal </p>
+      <h5>15 Settembre :) </h5>
+      <a href='/index.html' class="btnNext">
+        <img src="../assets/img/arrow-right.svg" alt="Submit Button">
+      </a>
+      </div>
+    </div>
+    
   </div>
 </div>
 </div>`

@@ -2,6 +2,9 @@
   text-align: center;
   margin-top: 30px;
 }
+.topBar .mobileShow {
+  display: none;
+}
 .topBar img {
   height: 85px;
 }
@@ -33,6 +36,35 @@
   text-decoration: none;
 }
 
+@media (max-width: 768px) {
+  .topBar .mobileHide {
+    display: none;
+  }
+  .topBar .mobileShow {
+    display: block;
+  }
+  .topBar .mobileShow ul {
+    position: relative;
+    width: 100%;
+  }
+  .topBar .mobileShow ul li {
+    display: inline-block;
+  }
+  .topBar .mobileShow ul li.logoWrapper {
+    margin-left: -10%;
+  }
+  .topBar .mobileShow ul li.logOutWrapper {
+    position: absolute;
+    left: 85%;
+    bottom: 5%;
+  }
+  .topBar .mobileShow ul li.logOutWrapper a img {
+    height: 25px;
+  }
+  .topBar img.logo {
+    height: 67px;
+  }
+}
 body .content h1 {
   font-size: 12.9rem;
 }
@@ -82,10 +114,23 @@ body .content .form-wrapper form button:hover {
   background-color: #dca428;
 }
 
+@media (max-width: 1024px) {
+  body .content h1 {
+    font-size: 9rem;
+  }
+  body .content p {
+    margin: 1% auto !important;
+  }
+}
 @media (max-width: 768px) {
   body .content .form-wrapper {
     width: 80%;
+    height: unset;
     margin-bottom: 25px;
+    padding: 40px 30px 20px 30px;
+  }
+  body .content .form-wrapper form input {
+    height: 55px;
   }
 
   .toggleable h1 {
@@ -100,12 +145,13 @@ body .content .greenFont {
 }
 body .content p {
   font-size: 2.2rem;
-  margin: 0 auto;
+  margin: 5% auto;
   max-width: 55ch;
 }
 body .content p.paraTitle {
-  margin-bottom: 35px;
   max-width: 40ch;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 body .content .content-container {
   width: 90%;
@@ -115,12 +161,11 @@ body .content .content-container {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.16);
   border-radius: 30px;
   position: relative;
-  padding: 55px 0;
+  padding: 35px 0;
 }
 body .content .content-container h5 {
   color: #B3EF81;
   font-size: 4rem;
-  padding-top: 50px;
 }
 body .content .content-container .btnNext {
   position: absolute;
@@ -135,6 +180,35 @@ body .content .content-container .btnNext:hover {
   background-color: #dca428;
 }
 
+@media screen and (max-width: 678px) {
+  body .content h1 {
+    font-size: 12.9rem;
+  }
+  body .content .greenFont {
+    color: #b3ef81;
+  }
+  body .content p {
+    font-size: 1.6rem;
+    padding: 5% 0;
+  }
+  body .content p.paraTitle {
+    padding: 0 0;
+    max-width: unset;
+  }
+  body .content .content-container {
+    padding: 30px 30px 60px 30px;
+  }
+  body .content .content-container h5 {
+    font-size: 2.2rem;
+    color: #6C6C6C;
+    opacity: 0.64;
+  }
+  body .content .content-container .btnNext {
+    position: absolute;
+    bottom: -10%;
+    right: 30%;
+  }
+}
 .content.thirdScreen .leftBoxBackground {
   height: 600px;
   position: relative;
@@ -221,6 +295,7 @@ body .content .content-container .btnNext:hover {
   position: relative;
   left: 2%;
   width: 92%;
+  cursor: pointer;
 }
 .content.thirdScreen .rightBox .uploadZone {
   position: absolute;
@@ -446,10 +521,6 @@ body.sixth .content.sixthScreen .wrapper .btnNext {
 body.sixth .content.sixthScreen .wrapper .btnNext:hover {
   background-color: #dca428;
 }
-body.sixth footer {
-  position: absolute;
-  bottom: 5%;
-}
 
 footer {
   margin-top: 5%;
@@ -460,20 +531,51 @@ footer ul {
   margin: 0 auto;
   padding: 0;
   list-style: none;
+  display: flex;
+  justify-content: space-between;
 }
 footer ul li {
-  display: inline;
+  display: flex;
   margin-right: 85px;
+  align-items: flex-end;
 }
 footer ul li:last-of-type {
   margin-right: 0;
 }
+footer ul li img {
+  object-fit: contain;
+}
 
+@media screen and (max-width: 768px) {
+  footer ul {
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+  }
+  footer ul li {
+    width: 25%;
+  }
+  footer ul li img {
+    object-fit: contain;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 768px) {
+  footer {
+    padding: 0 5%;
+  }
+  footer ul li {
+    margin-right: 0;
+  }
+}
 html {
   min-height: 100vh;
 }
 
 body, html {
+  height: 100vh;
   margin: 0;
   padding: 0;
   font-size: 10px;
@@ -484,7 +586,7 @@ body {
   background: url(../../assets/img/background.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: top center;
 }
 
 input:focus {

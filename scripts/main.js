@@ -5,8 +5,10 @@ $(function() {
         let userPassword = $('#logInPassword');
       if (userName.val() === 'admin@admin.com' && userPassword.val() === '123') {
         console.log('LogedIn')
-        $('.topBar').replaceWith(secondHeader);
-        $('.toggleable').replaceWith(secondMain);
+        $('.toggleable').animate({'opacity': 0}, 400, function(){
+          $(this).html(secondMain).animate({'opacity': 1}, 800); 
+          $('.topBar').html(secondHeader).animate({'opacity': 1}, 800);
+        });
       } else {
         alert('Invalid Info')
       }

@@ -1,6 +1,9 @@
 .topBar{
     text-align: center;
     margin-top: 30px;
+    .mobileShow{
+        display: none;
+    }
     img{
         height: 85px;
         &.logo{
@@ -31,4 +34,42 @@
             text-decoration: none;
         }
     }
+}
+@media (max-width: 768px) {
+.topBar{
+    .mobileHide{
+        display: none;
+    }
+    .mobileShow{
+        display: block;
+        ul{
+            position: relative;
+            width: 100%;
+            li{
+                display: inline-block;
+                &.logoWrapper{
+                    margin-left: -10%;
+                }
+                &.logOutWrapper{
+                    position: absolute;
+                    left: 85%;
+                    bottom: 5%;
+                
+                    a{
+                        img{
+                            height: 25px;
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+    img{
+        &.logo{
+            height:67px ;
+        }
+    }
+}
+
 }
