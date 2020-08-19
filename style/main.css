@@ -220,7 +220,7 @@ body .content .content-container .btnNext:hover {
   position: absolute;
   z-index: 999;
   height: 600px;
-  width: 92%;
+  width: 90%;
   top: 0;
   left: 0;
   padding: 65px 40px 40px 40px;
@@ -264,14 +264,14 @@ body .content .content-container .btnNext:hover {
   height: 600px;
   position: relative;
   z-index: 1;
-  width: 92%;
+  width: 90%;
 }
 .content.thirdScreen .rightBox {
   backdrop-filter: blur(10px);
   position: absolute;
   z-index: 999;
   height: 600px;
-  width: 92%;
+  width: 90%;
   top: 0;
   left: 0;
   padding: 65px 40px 40px 40px;
@@ -280,7 +280,7 @@ body .content .content-container .btnNext:hover {
 }
 .content.thirdScreen .rightBox p {
   font-size: 2rem;
-  width: 44ch;
+  max-width: 44ch;
   font-style: italic;
   margin-bottom: 55px;
   padding: 0 115px;
@@ -342,6 +342,11 @@ body .content .content-container .btnNext:hover {
   background-color: #dca428;
 }
 
+@media screen and (max-width: 768px) {
+  .content.thirdScreen .leftBoxBackground {
+    margin-bottom: 15%;
+  }
+}
 .content.fourthScreen .leftBoxBackground {
   height: 600px;
   position: relative;
@@ -521,6 +526,10 @@ body.sixth .content.sixthScreen .wrapper .btnNext {
 body.sixth .content.sixthScreen .wrapper .btnNext:hover {
   background-color: #dca428;
 }
+body.sixth footer {
+  position: absolute;
+  bottom: 0%;
+}
 
 footer {
   margin-top: 5%;
@@ -583,10 +592,8 @@ body, html {
 }
 
 body {
-  background: url(../../assets/img/background.jpg);
+  background: url(../../assets/img/background.jpg) no-repeat center center fixed;
   background-size: cover;
-  background-repeat: no-repeat;
-  background-position: top center;
 }
 
 input:focus {

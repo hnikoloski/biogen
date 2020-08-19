@@ -68,7 +68,7 @@ $(document).ready(function(){
 let thirdMain = `  <div class="content toggleable thirdScreen">
 <div class="container">
   <div class="row">
-    <div class="col-md-6 text-center">
+    <div class="col-lg-6 text-center">
       <div class="leftBoxBackground"></div>
       <div class="leftBox">
         <p>
@@ -82,7 +82,7 @@ let thirdMain = `  <div class="content toggleable thirdScreen">
         </div>
       </div>
     </div>
-    <div class="col-md-6 text-center">
+    <div class="col-lg-6 text-center">
       <div class="rightBoxBackground"></div>
       <div class="rightBox">
         <p>

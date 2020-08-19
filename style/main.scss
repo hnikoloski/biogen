@@ -22,10 +22,10 @@ body, html{
     color: #fff;
 }
 body{
-    background: url(../../assets/img/background.jpg);
+    background: url(../../assets/img/background.jpg) no-repeat center center fixed;
     background-size: cover;
-    background-repeat: no-repeat;
-    background-position: top center;
+    // background-repeat: no-repeat;
+    // background-position: top center;
    
 }
 
