@@ -180,7 +180,7 @@ body .content .content-container .btnNext:hover {
   background-color: #dca428;
 }
 
-@media screen and (max-width: 678px) {
+@media screen and (max-width: 768px) {
   body .content h1 {
     font-size: 12.9rem;
   }
@@ -207,6 +207,14 @@ body .content .content-container .btnNext:hover {
     position: absolute;
     bottom: -10%;
     right: 30%;
+  }
+}
+@media screen and (max-width: 425px) {
+  body .content .content-container {
+    padding: 30px;
+  }
+  body .content p {
+    font-size: 1.2rem;
   }
 }
 .content.thirdScreen .leftBoxBackground {
@@ -245,13 +253,13 @@ body .content .content-container .btnNext:hover {
   bottom: 15%;
   left: 26px;
   border-radius: 40px;
-  border: dashed 1px #5F5F5F;
+  border: dashed 1px #5f5f5f;
   font-size: 2.6rem;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.16);
 }
 .content.thirdScreen .leftBox label {
   position: absolute;
-  color: #5F5F5F;
+  color: #5f5f5f;
   top: 75%;
   left: 70%;
   z-index: 8;
@@ -302,7 +310,7 @@ body .content .content-container .btnNext:hover {
   bottom: 15%;
   left: 12%;
   background-color: #fff;
-  color: #6C6C6C;
+  color: #6c6c6c;
   height: 300px;
   padding: 90px 50px;
   border-radius: 40px;
@@ -343,8 +351,42 @@ body .content .content-container .btnNext:hover {
 }
 
 @media screen and (max-width: 768px) {
+  .content.thirdScreen {
+    padding-top: 10%;
+  }
+  .content.thirdScreen p {
+    margin-bottom: 10% !important;
+    max-width: unset !important;
+  }
+  .content.thirdScreen .leftBox {
+    width: 100%;
+  }
   .content.thirdScreen .leftBoxBackground {
     margin-bottom: 15%;
+    width: 100%;
+  }
+  .content.thirdScreen .rightBox {
+    width: 100%;
+  }
+  .content.thirdScreen .rightBox .rightBoxBackground {
+    width: 100%;
+  }
+  .content.thirdScreen .rightBox .uploadZone {
+    width: 75%;
+  }
+  .content.thirdScreen .rightBox input {
+    width: 75%;
+  }
+}
+@media screen and (max-width: 425px) {
+  .content.thirdScreen .leftBox p, .content.thirdScreen .rightBox p {
+    width: unset;
+    padding: 0;
+  }
+}
+@media screen and (max-width: 320px) {
+  body .content.thirdScreen .rightBox .uploadZone {
+    padding: 50px 0 !important;
   }
 }
 .content.fourthScreen .leftBoxBackground {
@@ -573,6 +615,8 @@ footer ul li img {
 }
 @media screen and (max-width: 768px) {
   footer {
+    position: absolute;
+    bottom: 0;
     padding: 0 5%;
   }
   footer ul li {

@@ -51,7 +51,7 @@ body {
 }
 
 
-@media screen and (max-width: 678px) {
+@media screen and (max-width: 768px) {
   body {
     .content {
       h1 {
@@ -83,5 +83,19 @@ body {
         }
       }
     }
+  }
+}
+@media screen and (max-width: 425px) {
+  body {
+    .content{
+      .content-container{
+        padding: 30px;
+  }
+
+  p{
+    font-size: 1.2rem;
+  }
+  } 
+
   }
 }
