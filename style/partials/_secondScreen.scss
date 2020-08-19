@@ -3,22 +3,30 @@ body {
     h1 {
       font-size: 12.9rem;
     }
+
     .greenFont {
       color: #b3ef81;
-      
+
     }
-    p{
+
+    p {
       font-size: 2.2rem;
       margin: 5% auto;
       max-width: 55ch;
-        &.paraTitle{
-          // padding: 0 25%;
-          max-width: 40ch;
-          margin-top: 0;
-          margin-bottom: 0;
+      font-family: "AvenirNext-Regular";
 
-        }
+
+      &.paraTitle {
+        // padding: 0 25%;
+        max-width: 40ch;
+        margin-top: 0;
+        margin-bottom: 0;
+        font-family: "AvenirNext-DemiBold";
+
+
+      }
     }
+
     .content-container {
       width: 90%;
       // height: 463px;
@@ -29,10 +37,13 @@ body {
       border-radius: 30px;
       position: relative;
       padding: 35px 0;
-      h5{
+
+      h5 {
         color: #B3EF81;
         font-size: 4rem;
+        font-family: "AvenirNext-Bold";
       }
+
       .btnNext {
         position: absolute;
         bottom: -10%;
@@ -41,11 +52,12 @@ body {
         border: none;
         border-radius: 28px;
         padding: 15px 30px;
+
         &:hover {
           background-color: #dca428;
         }
       }
-     
+
     }
   }
 }
@@ -57,45 +69,53 @@ body {
       h1 {
         font-size: 12.9rem;
       }
+
       .greenFont {
         color: #b3ef81;
-        
+
       }
-      p{
+
+      p {
         font-size: 1.6rem;
         padding: 5% 0;
-        &.paraTitle{
+
+        &.paraTitle {
           padding: 0 0;
           max-width: unset;
         }
       }
-      .content-container{
+
+      .content-container {
         padding: 30px 30px 60px 30px;
-        h5{
-          font-size: 2.2rem;
+        margin-bottom: 10%;
+
+        h5 {
+          font-size: 1.6rem;
           color: #6C6C6C;
           opacity: 0.64;
         }
-        .btnNext{
+
+        .btnNext {
           position: absolute;
           bottom: -10%;
-          right: 30%;
+          right: 10%;
         }
       }
     }
   }
 }
+
 @media screen and (max-width: 425px) {
   body {
-    .content{
-      .content-container{
+    .content {
+      .content-container {
         padding: 30px;
-  }
+      }
 
-  p{
-    font-size: 1.2rem;
-  }
-  } 
+      p {
+        font-size: 1.2rem;
+      }
+    }
 
   }
 }

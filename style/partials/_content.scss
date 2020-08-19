@@ -2,24 +2,34 @@ body {
   .content {
     h1 {
       font-size: 12.9rem;
+      text-shadow: 0 10px 10px rgba(0, 0, 0, 0.16);
     }
+
     .greenFont {
       color: #b3ef81;
     }
+
     p {
       font-size: 2.2rem;
+
+      &.loginText {
+        margin: 10% auto 2% auto;
+      }
     }
+
     .form-wrapper {
       width: 555px;
       height: 250px;
       background-color: #b3ef81;
       margin: 0 auto;
-      box-shadow: 0 10px 20px rgba($color: #000000, $alpha: 0.16);
+      box-shadow: 0 10px 20px rgba($color: #000000, $alpha: 0.30);
       border-radius: 30px;
       position: relative;
       padding: 50px 30px 20px 30px;
+
       form {
         width: 100%;
+
         input {
           color: #333;
           width: 100%;
@@ -30,11 +40,13 @@ body {
           height: 70px;
           padding: 20px 30px;
           font-size: 2.5rem;
+          line-height: 1;
 
           &::placeholder {
             color: #6c6c6c;
           }
         }
+
         button {
           position: absolute;
           bottom: -17%;
@@ -43,6 +55,7 @@ body {
           border: none;
           border-radius: 28px;
           padding: 15px 30px;
+
           &:hover {
             background-color: #dca428;
           }
@@ -51,14 +64,44 @@ body {
     }
   }
 }
+
+@media (max-width: 1440px) {
+  body {
+    .content {
+      .form-wrapper {
+        padding: 40px 30px 20px 30px;
+        height: 220px;
+
+        form {
+          input {
+            height: 55px;
+          }
+        }
+      }
+
+      h1 {
+        font-size: 8.5rem !important;
+      }
+
+      p {
+        &.loginText {
+          margin: 0 auto 2% auto;
+        }
+      }
+    }
+
+  }
+}
+
 @media (max-width: 1024px) {
   body {
     .content {
       h1 {
         font-size: 9rem;
       }
-      p{
-        margin: 1% auto!important;
+
+      p {
+        margin: 1% auto !important;
       }
     }
   }
@@ -67,19 +110,33 @@ body {
 @media (max-width: 768px) {
   body {
     .content {
+      h1 {
+        font-size: 3.5rem !important;
+      }
+
+      p {
+        &.loginText {
+          margin: 10% auto 0 auto !important;
+          font-size: 2rem;
+        }
+      }
+
       .form-wrapper {
-        width: 80%;
+        width: 90%;
         height: unset;
         margin-bottom: 25px;
         padding: 40px 30px 20px 30px;
-        form{
-          input{
+
+        form {
+          input {
             height: 55px;
+            font-size: 1.6rem;
           }
         }
       }
     }
   }
+
   .toggleable h1 {
     font-size: 4rem !important;
   }

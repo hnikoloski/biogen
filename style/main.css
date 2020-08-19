@@ -1,6 +1,6 @@
 .topBar {
   text-align: center;
-  margin-top: 30px;
+  padding-top: 30px;
 }
 .topBar .mobileShow {
   display: none;
@@ -16,6 +16,7 @@
   font-size: 2rem;
   line-height: 10.7rem;
   vertical-align: baseline;
+  font-family: "AvenirNext-Medium";
 }
 .topBar a.logOut {
   position: relative;
@@ -67,6 +68,7 @@
 }
 body .content h1 {
   font-size: 12.9rem;
+  text-shadow: 0 10px 10px rgba(0, 0, 0, 0.16);
 }
 body .content .greenFont {
   color: #b3ef81;
@@ -74,12 +76,15 @@ body .content .greenFont {
 body .content p {
   font-size: 2.2rem;
 }
+body .content p.loginText {
+  margin: 10% auto 2% auto;
+}
 body .content .form-wrapper {
   width: 555px;
   height: 250px;
   background-color: #b3ef81;
   margin: 0 auto;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.16);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
   border-radius: 30px;
   position: relative;
   padding: 50px 30px 20px 30px;
@@ -97,6 +102,7 @@ body .content .form-wrapper form input {
   height: 70px;
   padding: 20px 30px;
   font-size: 2.5rem;
+  line-height: 1;
 }
 body .content .form-wrapper form input::placeholder {
   color: #6c6c6c;
@@ -114,6 +120,21 @@ body .content .form-wrapper form button:hover {
   background-color: #dca428;
 }
 
+@media (max-width: 1440px) {
+  body .content .form-wrapper {
+    padding: 40px 30px 20px 30px;
+    height: 220px;
+  }
+  body .content .form-wrapper form input {
+    height: 55px;
+  }
+  body .content h1 {
+    font-size: 8.5rem !important;
+  }
+  body .content p.loginText {
+    margin: 0 auto 2% auto;
+  }
+}
 @media (max-width: 1024px) {
   body .content h1 {
     font-size: 9rem;
@@ -123,14 +144,22 @@ body .content .form-wrapper form button:hover {
   }
 }
 @media (max-width: 768px) {
+  body .content h1 {
+    font-size: 3.5rem !important;
+  }
+  body .content p.loginText {
+    margin: 10% auto 0 auto !important;
+    font-size: 2rem;
+  }
   body .content .form-wrapper {
-    width: 80%;
+    width: 90%;
     height: unset;
     margin-bottom: 25px;
     padding: 40px 30px 20px 30px;
   }
   body .content .form-wrapper form input {
     height: 55px;
+    font-size: 1.6rem;
   }
 
   .toggleable h1 {
@@ -147,11 +176,13 @@ body .content p {
   font-size: 2.2rem;
   margin: 5% auto;
   max-width: 55ch;
+  font-family: "AvenirNext-Regular";
 }
 body .content p.paraTitle {
   max-width: 40ch;
   margin-top: 0;
   margin-bottom: 0;
+  font-family: "AvenirNext-DemiBold";
 }
 body .content .content-container {
   width: 90%;
@@ -166,6 +197,7 @@ body .content .content-container {
 body .content .content-container h5 {
   color: #B3EF81;
   font-size: 4rem;
+  font-family: "AvenirNext-Bold";
 }
 body .content .content-container .btnNext {
   position: absolute;
@@ -197,16 +229,17 @@ body .content .content-container .btnNext:hover {
   }
   body .content .content-container {
     padding: 30px 30px 60px 30px;
+    margin-bottom: 10%;
   }
   body .content .content-container h5 {
-    font-size: 2.2rem;
+    font-size: 1.6rem;
     color: #6C6C6C;
     opacity: 0.64;
   }
   body .content .content-container .btnNext {
     position: absolute;
     bottom: -10%;
-    right: 30%;
+    right: 10%;
   }
 }
 @media screen and (max-width: 425px) {
@@ -217,6 +250,10 @@ body .content .content-container .btnNext:hover {
     font-size: 1.2rem;
   }
 }
+.content.thirdScreen {
+  font-family: "AvenirNext-Regular";
+  text-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
 .content.thirdScreen .leftBoxBackground {
   height: 600px;
   position: relative;
@@ -224,7 +261,7 @@ body .content .content-container .btnNext:hover {
   width: 92%;
 }
 .content.thirdScreen .leftBox {
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(20px);
   position: absolute;
   z-index: 999;
   height: 600px;
@@ -234,13 +271,14 @@ body .content .content-container .btnNext:hover {
   padding: 65px 40px 40px 40px;
   border-radius: 40px;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.16);
+  background-color: rgba(0, 0, 0, 0.3);
 }
 .content.thirdScreen .leftBox p {
   font-size: 2rem;
-  width: 44ch;
+  width: 90%;
   font-style: italic;
   margin-bottom: 55px;
-  padding: 0 40px;
+  text-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
 }
 .content.thirdScreen .leftBox p span {
   text-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
@@ -254,13 +292,13 @@ body .content .content-container .btnNext:hover {
   left: 26px;
   border-radius: 40px;
   border: dashed 1px #5f5f5f;
-  font-size: 2.6rem;
+  font-size: 1.7rem;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.16);
 }
 .content.thirdScreen .leftBox label {
   position: absolute;
   color: #5f5f5f;
-  top: 75%;
+  top: 80%;
   left: 70%;
   z-index: 8;
   font-size: 1.8rem;
@@ -275,7 +313,8 @@ body .content .content-container .btnNext:hover {
   width: 90%;
 }
 .content.thirdScreen .rightBox {
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(20px);
+  background-color: rgba(0, 0, 0, 0.3);
   position: absolute;
   z-index: 999;
   height: 600px;
@@ -288,7 +327,6 @@ body .content .content-container .btnNext:hover {
 }
 .content.thirdScreen .rightBox p {
   font-size: 2rem;
-  max-width: 44ch;
   font-style: italic;
   margin-bottom: 55px;
   padding: 0 115px;
@@ -307,15 +345,16 @@ body .content .content-container .btnNext:hover {
 }
 .content.thirdScreen .rightBox .uploadZone {
   position: absolute;
-  bottom: 15%;
-  left: 12%;
+  bottom: 11.5%;
+  left: 10%;
   background-color: #fff;
   color: #6c6c6c;
   height: 300px;
-  padding: 90px 50px;
+  padding: 60px 50px;
   border-radius: 40px;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.16);
   border: 1px dashed #707070;
+  width: 80%;
 }
 .content.thirdScreen .rightBox .uploadZone p {
   width: 100%;
@@ -350,16 +389,83 @@ body .content .content-container .btnNext:hover {
   background-color: #dca428;
 }
 
+@media screen and (max-width: 1440px) {
+  .content.thirdScreen .rightBoxBackground,
+.content.thirdScreen .leftBoxBackground {
+    height: 455px;
+  }
+  .content.thirdScreen .leftBox,
+.content.thirdScreen .rightBox {
+    height: 455px;
+    padding: 0;
+  }
+  .content.thirdScreen .leftBox p,
+.content.thirdScreen .rightBox p {
+    margin-bottom: 20px;
+  }
+  .content.thirdScreen .leftBox textarea,
+.content.thirdScreen .rightBox textarea {
+    height: 260px;
+    font-size: 1.6rem;
+  }
+  .content.thirdScreen .leftBox label {
+    left: 75%;
+  }
+  .content.thirdScreen .rightBox input {
+    line-height: 260px;
+  }
+  .content.thirdScreen .rightBox .uploadZone {
+    height: 260px;
+    width: 90%;
+    left: 5%;
+    bottom: 12.5%;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .content.thirdScreen .leftBox p {
+    width: 100%;
+    max-width: 80%;
+    padding: 1.5% 0;
+  }
+  .content.thirdScreen .leftBox label {
+    left: 65%;
+  }
+  .content.thirdScreen .rightBox p {
+    max-width: 80%;
+    padding: 10% 0;
+  }
+  .content.thirdScreen .rightBox input {
+    width: 100%;
+  }
+  .content.thirdScreen .rightBox .uploadZone {
+    width: 80%;
+    left: 10%;
+    padding: 12% 5%;
+  }
+}
 @media screen and (max-width: 768px) {
   .content.thirdScreen {
     padding-top: 10%;
   }
   .content.thirdScreen p {
-    margin-bottom: 10% !important;
+    margin-bottom: 0% !important;
     max-width: unset !important;
   }
   .content.thirdScreen .leftBox {
     width: 100%;
+    padding: 5%;
+  }
+  .content.thirdScreen .leftBox p {
+    min-height: unset;
+  }
+  .content.thirdScreen .leftBox textarea {
+    width: 100%;
+    font-size: 1.6rem;
+    height: 260px;
+  }
+  .content.thirdScreen .leftBox label {
+    left: 80%;
+    top: 85%;
   }
   .content.thirdScreen .leftBoxBackground {
     margin-bottom: 15%;
@@ -367,26 +473,63 @@ body .content .content-container .btnNext:hover {
   }
   .content.thirdScreen .rightBox {
     width: 100%;
+    padding: 5%;
   }
   .content.thirdScreen .rightBox .rightBoxBackground {
     width: 100%;
   }
   .content.thirdScreen .rightBox .uploadZone {
-    width: 75%;
+    width: 90%;
+    left: 5%;
   }
   .content.thirdScreen .rightBox input {
-    width: 75%;
+    width: 100%;
+    left: 0;
+    top: 60px;
+  }
+  .content.thirdScreen .rightBox .btnNext {
+    padding: 10px 20px !important;
   }
 }
 @media screen and (max-width: 425px) {
-  .content.thirdScreen .leftBox p, .content.thirdScreen .rightBox p {
+  .content.thirdScreen .leftBox p,
+.content.thirdScreen .rightBox p {
     width: unset;
     padding: 0;
   }
+  .content.thirdScreen label.thirdScreenCounter {
+    left: 70%;
+    top: 75%;
+  }
+}
+@media screen and (max-width: 375px) {
+  .content.thirdScreen .leftBox,
+.content.thirdScreen .rightBox {
+    height: 470px;
+  }
+  .content.thirdScreen .leftBox textarea {
+    height: 315px;
+  }
+  .content.thirdScreen .leftBox label.thirdScreenCounter {
+    font-size: 1.6rem;
+    top: 90%;
+  }
+  .content.thirdScreen .rightBox .uploadZone {
+    height: 315px;
+  }
+  .content.thirdScreen .rightBox input {
+    top: 15px;
+    line-height: 315px;
+  }
 }
 @media screen and (max-width: 320px) {
+  body .content.thirdScreen .leftBox label.thirdScreenCounter {
+    left: 60%;
+    top: 90%;
+  }
   body .content.thirdScreen .rightBox .uploadZone {
     padding: 50px 0 !important;
+    top: 25%;
   }
 }
 .content.fourthScreen .leftBoxBackground {
@@ -521,8 +664,176 @@ body .content .content-container .btnNext:hover {
   background-color: #dca428;
 }
 
+.content.textScreen {
+  text-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  font-family: "AvenirNext-Regular";
+}
+.content.textScreen .leftBoxBackground {
+  height: 600px;
+  position: relative;
+  z-index: 1;
+  width: 100%;
+}
+.content.textScreen .leftBox {
+  backdrop-filter: blur(20px);
+  background-color: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  z-index: 999;
+  height: 585px;
+  width: 100%;
+  top: 5%;
+  left: 0;
+  padding: 0 50px;
+  border-radius: 40px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.16);
+}
+.content.textScreen .leftBox p {
+  font-size: 2rem;
+  font-style: italic;
+  margin-bottom: 55px;
+  padding: 0 40px;
+  text-align: center;
+}
+.content.textScreen .leftBox p span {
+  text-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+.content.textScreen .leftBox textarea {
+  padding: 5%;
+  height: 360px;
+  width: 90%;
+  margin: 0 auto;
+  bottom: 15%;
+  left: 26px;
+  border-radius: 40px;
+  border: dashed 1px #5f5f5f;
+  font-size: 1.7rem;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.16);
+}
+.content.textScreen .leftBox label {
+  position: absolute;
+  color: #5f5f5f;
+  top: 80%;
+  left: 80%;
+  z-index: 8;
+  font-size: 1.8rem;
+}
+.content.textScreen .leftBox label.maxChars {
+  color: #ff0000;
+}
+.content.textScreen .leftBox .btnNext {
+  position: absolute;
+  bottom: -5%;
+  right: 10%;
+  background-color: #fac040;
+  border: none;
+  border-radius: 28px;
+  padding: 15px 30px;
+}
+.content.textScreen .leftBox .btnNext:hover {
+  background-color: #dca428;
+}
+
+@media screen and (max-width: 1440px) {
+  .content.textScreen .leftBoxBackground {
+    height: 455px;
+  }
+  .content.textScreen .leftBox {
+    height: 455px;
+  }
+  .content.textScreen .leftBox p {
+    margin-bottom: 20px;
+  }
+  .content.textScreen .leftBox textarea {
+    height: 275px;
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .content.textScreen {
+    padding-top: 10%;
+  }
+  .content.textScreen p {
+    margin-bottom: 10% !important;
+    max-width: unset !important;
+  }
+  .content.textScreen .leftBox {
+    width: 100%;
+    padding: 5% 0;
+  }
+  .content.textScreen .leftBox textarea {
+    font-size: 1.6rem;
+  }
+  .content.textScreen .leftBox label {
+    top: 65% !important;
+  }
+  .content.textScreen .leftBoxBackground {
+    margin-bottom: 15%;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .content.textScreen .leftBoxBackground {
+    height: 570px;
+  }
+  .content.textScreen .leftBox {
+    height: 570px;
+  }
+  .content.textScreen .leftBox p {
+    padding: 5% 40px;
+  }
+  .content.textScreen .leftBox label {
+    top: 70%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .content.textScreen .leftBox {
+    height: 520px;
+  }
+  .content.textScreen .leftBox p {
+    margin-bottom: 10px !important;
+    padding: 0;
+  }
+  .content.textScreen .leftBox .btnNext {
+    padding: 10px 20px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .content.textScreen .leftBoxBackground {
+    height: 540px;
+  }
+  .content.textScreen .leftBox p,
+.content.textScreen .rightBox p {
+    width: 90%;
+    padding: 0;
+  }
+  .content.textScreen .leftBox textarea {
+    height: 350px;
+  }
+  .content.textScreen .leftBox label {
+    top: 75% !important;
+    left: 75%;
+  }
+}
+@media screen and (max-width: 375px) {
+  body .content.textScreen .leftBox {
+    height: 540px;
+  }
+  body .content.textScreen .leftBox label {
+    top: 75%;
+    left: 70%;
+  }
+}
+@media screen and (max-width: 320px) {
+  body .content.textScreen .leftBox label {
+    top: 80%;
+    left: 70%;
+  }
+}
+.content.fifthScreen {
+  margin-top: 10%;
+}
 .content.fifthScreen h1 {
-  font-size: 10rem;
+  font-size: 10rem !important;
   text-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
 }
 .content.fifthScreen .btn-yellow {
@@ -532,47 +843,112 @@ body .content .content-container .btnNext:hover {
   font-size: 2.4rem;
   padding: 15px 30px;
   line-height: 12rem;
+  font-family: "AvenirNext-Bold";
 }
 .content.fifthScreen .btn-yellow:hover {
   text-decoration: none;
 }
 
+@media screen and (max-width: 1440px) {
+  .content.fifthScreen {
+    margin-top: 1%;
+  }
+  .content.fifthScreen h1 {
+    font-size: 9rem !important;
+  }
+}
+@media screen and (max-width: 425px) {
+  .content.fifthScreen {
+    margin-top: 35%;
+  }
+  .content.fifthScreen h1 {
+    font-size: 6rem !important;
+  }
+  .content.fifthScreen .btn-yellow {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 375px) {
+  .content.fifthScreen h1 {
+    font-size: 4.8rem !important;
+  }
+  .content.fifthScreen .btn-yellow {
+    font-size: 1.3rem;
+  }
+}
 body.sixth .content.sixthScreen .wrapper {
-  position: relative;
-  top: 50%;
   background-color: #fff;
   border-radius: 40px;
   color: #6c6c6c;
   width: 475px;
-  margin: 0 auto;
+  margin: 10% auto 20% auto;
   padding: 30px 40px;
 }
 body.sixth .content.sixthScreen .wrapper h5 {
   font-size: 4rem;
   font-weight: 500;
+  font-family: "AvenirNext-Bold";
 }
 body.sixth .content.sixthScreen .wrapper p {
   font-size: 2.8rem;
   font-weight: 300;
   line-height: 40px;
+  font-family: "AvenirNext-Medium";
 }
 body.sixth .content.sixthScreen .wrapper .btnNext {
   position: absolute;
-  bottom: -17%;
-  right: 10%;
+  /* bottom: -17%; */
+  left: 50%;
   background-color: #fac040;
   border: none;
   border-radius: 28px;
-  padding: 15px 30px;
+  padding: 15px 0;
+  transform: translate(-50%, 10%);
+  width: 90px;
+  display: none;
 }
 body.sixth .content.sixthScreen .wrapper .btnNext:hover {
   background-color: #dca428;
 }
-body.sixth footer {
-  position: absolute;
+body footer {
+  position: relative;
   bottom: 0%;
 }
 
+@media screen and (max-width: 1440px) {
+  body.sixth .content.sixthScreen .wrapper {
+    margin: 5% auto;
+  }
+}
+@media screen and (max-width: 768px) {
+  body.sixth .content.sixthScreen .wrapper {
+    margin: 30% auto;
+    width: unset;
+  }
+  body.sixth .content.sixthScreen .wrapper h5 {
+    font-size: 3rem;
+  }
+  body.sixth .content.sixthScreen .wrapper p {
+    font-size: 2.2rem;
+    padding: 0;
+  }
+  body.sixth .content.sixthScreen .wrapper .btnNext {
+    position: absolute;
+    /* bottom: -17%; */
+    left: 50%;
+    background-color: #fac040;
+    border: none;
+    border-radius: 28px;
+    padding: 15px 0;
+    transform: translate(-50%, 10%);
+    width: 90px;
+  }
+}
+@media screen and (max-width: 320px) {
+  body.sixth .content.sixthScreen .wrapper {
+    padding: 30px;
+  }
+}
 footer {
   margin-top: 5%;
   margin-bottom: 1%;
@@ -597,7 +973,17 @@ footer ul li img {
   object-fit: contain;
 }
 
+@media screen and (max-width: 1440px) {
+  body footer {
+    position: relative;
+  }
+}
 @media screen and (max-width: 768px) {
+  body.thirdBody footer {
+    margin-top: 10%;
+    position: relative;
+  }
+
   footer ul {
     margin: 0 auto;
     padding: 0;
@@ -623,16 +1009,66 @@ footer ul li img {
     margin-right: 0;
   }
 }
+@font-face {
+  font-family: "AvenirNext-Bold";
+  src: local("AvenirNext-Bold"), url(../assets/fonts/AvenirNext/AvenirNext-Bold.ttf);
+}
+@font-face {
+  font-family: "AvenirNext-BoldItalic";
+  src: local("AvenirNext-BoldItalic"), url(../assets/fonts/AvenirNext/AvenirNext-BoldItalic.ttf);
+}
+@font-face {
+  font-family: "AvenirNext-DemiBold";
+  src: local("AvenirNext-DemiBold"), url(../assets/fonts/AvenirNext/AvenirNext-DemiBold.ttf);
+}
+@font-face {
+  font-family: "AvenirNext-DemiBoldItalic";
+  src: local("AvenirNext-DemiBoldItalic"), url(../assets/fonts/AvenirNext/AvenirNext-DemiBoldItalic.ttf);
+}
+@font-face {
+  font-family: "AvenirNext-Heavy";
+  src: local("AvenirNext-Heavy"), url(../assets/fonts/AvenirNext/AvenirNext-Heavy.ttf);
+}
+@font-face {
+  font-family: "AvenirNext-HeavyItalic";
+  src: local("AvenirNext-HeavyItalic"), url(../assets/fonts/AvenirNext/AvenirNext-HeavyItalic.ttf);
+}
+@font-face {
+  font-family: "AvenirNext-Italic";
+  src: local("AvenirNext-Italic"), url(../assets/fonts/AvenirNext/AvenirNext-Italic.ttf);
+}
+@font-face {
+  font-family: "AvenirNext-Medium";
+  src: local("AvenirNext-Medium"), url(../assets/fonts/AvenirNext/AvenirNext-Medium.ttf);
+}
+@font-face {
+  font-family: "AvenirNext-MediumItalic";
+  src: local("AvenirNext-MediumItalic"), url(../assets/fonts/AvenirNext/AvenirNext-MediumItalic.ttf);
+}
+@font-face {
+  font-family: "AvenirNext-Regular";
+  src: local("AvenirNext-Regular"), url(../assets/fonts/AvenirNext/AvenirNext-Regular.ttf);
+}
+@font-face {
+  font-family: "AvenirNext-UltraLight";
+  src: local("AvenirNext-UltraLight"), url(../assets/fonts/AvenirNext/AvenirNext-UltraLight.ttf);
+}
+@font-face {
+  font-family: "AvenirNext-UltraLightItalic";
+  src: local("AvenirNext-UltraLightItalic"), url(../assets/fonts/AvenirNext/AvenirNext-UltraLightItalic.ttf);
+}
 html {
   min-height: 100vh;
 }
 
-body, html {
+body,
+html {
   height: 100vh;
   margin: 0;
   padding: 0;
   font-size: 10px;
   color: #fff;
+  font-family: "AvenirNext-Regular";
 }
 
 body {
@@ -646,6 +1082,14 @@ input:focus {
 
 span.bold {
   font-weight: bold;
+}
+
+textarea {
+  resize: none;
+}
+
+h1 {
+  font-family: "AvenirNext-Bold";
 }
 
 /*# sourceMappingURL=main.css.map */

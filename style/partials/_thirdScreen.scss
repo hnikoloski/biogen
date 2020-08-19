@@ -1,5 +1,9 @@
 .content {
   &.thirdScreen {
+    font-family: "AvenirNext-Regular";
+    text-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+
+
     .leftBoxBackground {
       height: 600px;
       position: relative;
@@ -7,8 +11,9 @@
       //  background-color: green;
       width: 92%;
     }
+
     .leftBox {
-      backdrop-filter: blur(10px);
+      backdrop-filter: blur(20px);
       position: absolute;
       z-index: 999;
       height: 600px;
@@ -18,16 +23,22 @@
       padding: 65px 40px 40px 40px;
       border-radius: 40px;
       box-shadow: 0 10px 20px rgba(0, 0, 0, 0.16);
+      background-color: rgba(0, 0, 0, .3);
+
       p {
         font-size: 2rem;
-        width: 44ch;
+        width: 90%;
         font-style: italic;
         margin-bottom: 55px;
-        padding: 0 40px;
+        // padding: 0 40px;
+        text-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+
+
         span {
           text-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
         }
       }
+
       textarea {
         padding: 5%;
         height: 300px;
@@ -37,21 +48,24 @@
         left: 26px;
         border-radius: 40px;
         border: dashed 1px #5f5f5f;
-        font-size: 2.6rem;
+        font-size: 1.7rem;
         box-shadow: 0 10px 20px rgba(0, 0, 0, 0.16);
       }
+
       label {
         position: absolute;
         color: #5f5f5f;
-        top: 75%;
+        top: 80%;
         left: 70%;
         z-index: 8;
         font-size: 1.8rem;
+
         &.maxChars {
           color: red;
         }
       }
     }
+
     .rightBoxBackground {
       height: 600px;
       position: relative;
@@ -59,8 +73,10 @@
       //  background-color: green;
       width: 90%;
     }
+
     .rightBox {
-      backdrop-filter: blur(10px);
+      backdrop-filter: blur(20px);
+      background-color: rgba(0, 0, 0, .3);
       position: absolute;
       z-index: 999;
       height: 600px;
@@ -70,16 +86,19 @@
       padding: 65px 40px 40px 40px;
       border-radius: 40px;
       box-shadow: 0 10px 20px rgba(0, 0, 0, 0.16);
+
       p {
         font-size: 2rem;
-        max-width: 44ch;
+        // max-width: 44ch;
         font-style: italic;
         margin-bottom: 55px;
         padding: 0 115px;
+
         span {
           text-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
         }
       }
+
       input {
         opacity: 0;
         line-height: 300px;
@@ -89,28 +108,33 @@
         width: 92%;
         cursor: pointer;
       }
+
       .uploadZone {
         position: absolute;
-        bottom: 15%;
-        left: 12%;
+        bottom: 11.5%;
+        left: 10%;
         background-color: #fff;
         color: #6c6c6c;
         height: 300px;
-        padding: 90px 50px;
+        padding: 60px 50px;
         border-radius: 40px;
         box-shadow: 0 10px 20px rgba(0, 0, 0, 0.16);
         border: 1px dashed #707070;
+        width: 80%;
+
         p {
           width: 100%;
           padding: 0;
           font-style: normal;
           margin-bottom: 0 !important;
         }
+
         img {
           height: 35px;
           margin-top: 23px;
           margin-bottom: 20px;
         }
+
         .uploadBtn {
           background: #fff;
           box-shadow: 0 10px 20px rgba(0, 0, 0, 0.16);
@@ -121,6 +145,7 @@
           border-radius: 36px;
         }
       }
+
       .btnNext {
         position: absolute;
         bottom: -5%;
@@ -129,8 +154,95 @@
         border: none;
         border-radius: 28px;
         padding: 15px 30px;
+
         &:hover {
           background-color: #dca428;
+        }
+      }
+    }
+  }
+}
+
+@media screen and(max-width:1440px) {
+  .content {
+    &.thirdScreen {
+
+      .rightBoxBackground,
+      .leftBoxBackground {
+        height: 455px;
+      }
+
+      .leftBox,
+      .rightBox {
+        height: 455px;
+        padding: 0;
+
+        p {
+          margin-bottom: 20px;
+        }
+
+        textarea {
+          height: 260px;
+          font-size: 1.6rem;
+        }
+      }
+
+      .leftBox {
+        label {
+          left: 75%;
+        }
+      }
+
+      .rightBox {
+        input {
+          line-height: 260px;
+        }
+
+        .uploadZone {
+          height: 260px;
+          width: 90%;
+          left: 5%;
+          bottom: 12.5%;
+        }
+
+
+      }
+
+    }
+
+  }
+}
+
+@media screen and(max-width:1024px) {
+  .content {
+    &.thirdScreen {
+      .leftBox {
+        p {
+          width: 100%;
+          // min-height: 160px;
+          max-width: 80%;
+          padding: 1.5% 0;
+        }
+
+        label {
+          left: 65%;
+        }
+      }
+
+      .rightBox {
+        p {
+          max-width: 80%;
+          padding: 10% 0;
+        }
+
+        input {
+          width: 100%;
+        }
+
+        .uploadZone {
+          width: 80%;
+          left: 10%;
+          padding: 12% 5%;
         }
       }
     }
@@ -141,60 +253,153 @@
   .content {
     &.thirdScreen {
       padding-top: 10%;
+
       p {
-        margin-bottom: 10% !important;
+        margin-bottom: 0% !important;
         max-width: unset !important;
       }
-      .leftBox{
+
+      .leftBox {
         width: 100%;
+        padding: 5%;
+
+        p {
+          min-height: unset;
+        }
+
+        textarea {
+          width: 100%;
+          font-size: 1.6rem;
+          height: 260px;
+        }
+
+        label {
+          left: 80%;
+          top: 85%;
+        }
       }
+
       .leftBoxBackground {
         margin-bottom: 15%;
         width: 100%;
       }
+
       .rightBox {
         width: 100%;
-        .rightBoxBackground{
+        padding: 5%;
+
+        .rightBoxBackground {
           width: 100%;
         }
-        .uploadZone{
-          width: 75%;
+
+        .uploadZone {
+          width: 90%;
+          left: 5%;
         }
-        input{
-          width: 75%;
-        }}
+
+        input {
+          width: 100%;
+          left: 0;
+          top: 60px;
+
+        }
+
+        .btnNext {
+
+          padding: 10px 20px !important;
+        }
+      }
     }
   }
 }
+
+
 
 @media screen and (max-width:425px) {
-  .content{
-  &.thirdScreen {
-    .leftBox,.rightBox{
-      p{
-        width: unset;
-        padding: 0;
-      }
-  }
+  .content {
+    &.thirdScreen {
 
-  } 
+      .leftBox,
+      .rightBox {
+        p {
+          width: unset;
+          padding: 0;
+        }
+      }
+
+      label {
+        &.thirdScreenCounter {
+          left: 70%;
+          top: 75%;
+        }
+      }
+    }
 
   }
 }
-@media screen and (max-width:320px) {
-  body{
-    .content
-    {
-    &.thirdScreen {
-      .rightBox {
-        .uploadZone{
-          padding: 50px 0!important;
-      }
-    }
-      
 
-     
-    }
-  }}
+@media screen and (max-width:375px) {
+  .content {
+    &.thirdScreen {
+
+      .leftBox,
+      .rightBox {
+        height: 470px;
       }
-  
+
+      .leftBox {
+        textarea {
+          height: 315px;
+        }
+
+        label {
+          &.thirdScreenCounter {
+
+            font-size: 1.6rem;
+            top: 90%;
+          }
+
+        }
+      }
+
+      .rightBox {
+        .uploadZone {
+          height: 315px;
+        }
+
+        input {
+          top: 15px;
+          line-height: 315px;
+        }
+      }
+
+    }
+  }
+}
+
+@media screen and (max-width:320px) {
+  body {
+    .content {
+      &.thirdScreen {
+        .leftBox {
+          label {
+            &.thirdScreenCounter {
+              left: 60%;
+              top: 90%;
+            }
+          }
+        }
+
+        .rightBox {
+          .uploadZone {
+            padding: 50px 0 !important;
+            top: 25%
+          }
+        }
+
+
+
+      }
+    }
+  }
+}

@@ -1,24 +1,31 @@
-.topBar{
+.topBar {
     text-align: center;
-    margin-top: 30px;
-    .mobileShow{
+    padding-top: 30px;
+
+    .mobileShow {
         display: none;
     }
-    img{
+
+    img {
         height: 85px;
-        &.logo{
+
+        &.logo {
             margin: 0 auto;
+        }
     }
-    }
-    a{
+
+    a {
         color: #ffffff;
         font-size: 2rem;
         line-height: 10.7rem;
         vertical-align: baseline;
-        &.logOut{
+        font-family: "AvenirNext-Medium";
+
+        &.logOut {
             position: relative;
             padding-right: 15px;
-            &::after{
+
+            &::after {
                 content: "";
                 opacity: 0.5;
                 position: absolute;
@@ -29,47 +36,55 @@
                 width: 30px;
             }
         }
-        &:hover{
+
+        &:hover {
             opacity: 0.8;
             text-decoration: none;
         }
     }
 }
-@media (max-width: 768px) {
-.topBar{
-    .mobileHide{
-        display: none;
-    }
-    .mobileShow{
-        display: block;
-        ul{
-            position: relative;
-            width: 100%;
-            li{
-                display: inline-block;
-                &.logoWrapper{
-                    margin-left: -10%;
-                }
-                &.logOutWrapper{
-                    position: absolute;
-                    left: 85%;
-                    bottom: 5%;
-                
-                    a{
-                        img{
-                            height: 25px;
 
+@media (max-width: 768px) {
+    .topBar {
+        .mobileHide {
+            display: none;
+        }
+
+        .mobileShow {
+            display: block;
+
+            ul {
+                position: relative;
+                width: 100%;
+
+                li {
+                    display: inline-block;
+
+                    &.logoWrapper {
+                        margin-left: -10%;
+                    }
+
+                    &.logOutWrapper {
+                        position: absolute;
+                        left: 85%;
+                        bottom: 5%;
+
+                        a {
+                            img {
+                                height: 25px;
+
+                            }
                         }
                     }
                 }
             }
         }
-    }
-    img{
-        &.logo{
-            height:67px ;
+
+        img {
+            &.logo {
+                height: 67px;
+            }
         }
     }
-}
 
 }

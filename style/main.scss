@@ -6,37 +6,112 @@
 @import './partials/_secondScreen';
 @import './partials/_thirdScreen';
 @import './partials/_fourthScreen';
+@import './partials/_textScreen';
 @import './partials/_fifthScreen';
 @import './partials/_sixthScreen';
 @import './partials/_footer';
+
+// Fonts
+@font-face {
+    font-family: 'AvenirNext-Bold';
+    src: local('AvenirNext-Bold'), url(../assets/fonts/AvenirNext/AvenirNext-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'AvenirNext-BoldItalic';
+    src: local('AvenirNext-BoldItalic'), url(../assets/fonts/AvenirNext/AvenirNext-BoldItalic.ttf);
+}
+
+@font-face {
+    font-family: 'AvenirNext-DemiBold';
+    src: local('AvenirNext-DemiBold'), url(../assets/fonts/AvenirNext/AvenirNext-DemiBold.ttf);
+}
+
+@font-face {
+    font-family: 'AvenirNext-DemiBoldItalic';
+    src: local('AvenirNext-DemiBoldItalic'), url(../assets/fonts/AvenirNext/AvenirNext-DemiBoldItalic.ttf);
+}
+
+@font-face {
+    font-family: 'AvenirNext-Heavy';
+    src: local('AvenirNext-Heavy'), url(../assets/fonts/AvenirNext/AvenirNext-Heavy.ttf);
+}
+
+@font-face {
+    font-family: 'AvenirNext-HeavyItalic';
+    src: local('AvenirNext-HeavyItalic'), url(../assets/fonts/AvenirNext/AvenirNext-HeavyItalic.ttf);
+}
+
+@font-face {
+    font-family: 'AvenirNext-Italic';
+    src: local('AvenirNext-Italic'), url(../assets/fonts/AvenirNext/AvenirNext-Italic.ttf);
+}
+
+@font-face {
+    font-family: 'AvenirNext-Medium';
+    src: local('AvenirNext-Medium'), url(../assets/fonts/AvenirNext/AvenirNext-Medium.ttf);
+}
+
+@font-face {
+    font-family: 'AvenirNext-MediumItalic';
+    src: local('AvenirNext-MediumItalic'), url(../assets/fonts/AvenirNext/AvenirNext-MediumItalic.ttf);
+}
+
+@font-face {
+    font-family: 'AvenirNext-Regular';
+    src: local('AvenirNext-Regular'), url(../assets/fonts/AvenirNext/AvenirNext-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'AvenirNext-UltraLight';
+    src: local('AvenirNext-UltraLight'), url(../assets/fonts/AvenirNext/AvenirNext-UltraLight.ttf);
+}
+
+@font-face {
+    font-family: 'AvenirNext-UltraLightItalic';
+    src: local('AvenirNext-UltraLightItalic'), url(../assets/fonts/AvenirNext/AvenirNext-UltraLightItalic.ttf);
+}
+
 // GLobals
-html{
+html {
     // max-height: 100vh;
     min-height: 100vh;
 }
-body, html{
+
+body,
+html {
     height: 100vh;
     margin: 0;
     padding: 0;
     font-size: 10px;
     color: #fff;
+    font-family: 'AvenirNext-Regular';
 }
-body{
+
+body {
     background: url(../../assets/img/background.jpg) no-repeat center center fixed;
     background-size: cover;
     // background-repeat: no-repeat;
     // background-position: top center;
-   
+
 }
 
-input{
-    &:focus{
+input {
+    &:focus {
         outline: none;
     }
 }
-span{
-    &.bold{
+
+span {
+    &.bold {
         font-weight: bold;
     }
 }
 
+textarea {
+    resize: none;
+}
+
+h1 {
+    font-family: 'AvenirNext-Bold';
+}
